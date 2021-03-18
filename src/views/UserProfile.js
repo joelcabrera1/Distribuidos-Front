@@ -21,28 +21,27 @@ function User() {
           <Col md="8">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Edit Profile</Card.Title>
+                <Card.Title as="h4">Editar Perfil</Card.Title>
               </Card.Header>
               <Card.Body>
                 <Form>
                   <Row>
                     <Col className="pr-1" md="5">
                       <Form.Group>
-                        <label>Company (disabled)</label>
+                        <label>Correo Electrónico</label>
                         <Form.Control
-                          defaultValue="Creative Code Inc."
+                          defaultValue="correo3838@correo.com"
                           disabled
-                          placeholder="Company"
-                          type="text"
+                          placeholder="Email"
+                          type="email"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="px-1" md="3">
                       <Form.Group>
-                        <label>Username</label>
+                        <label>Tipo Documento</label>
                         <Form.Control
-                          defaultValue="michael23"
-                          placeholder="Username"
+                          placeholder="DNI"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
@@ -50,11 +49,11 @@ function User() {
                     <Col className="pl-1" md="4">
                       <Form.Group>
                         <label htmlFor="exampleInputEmail1">
-                          Email address
+                          Num Documento
                         </label>
                         <Form.Control
-                          placeholder="Email"
-                          type="email"
+                          placeholder="07639271"
+                          type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
@@ -62,20 +61,18 @@ function User() {
                   <Row>
                     <Col className="pr-1" md="6">
                       <Form.Group>
-                        <label>First Name</label>
+                        <label>Nombres</label>
                         <Form.Control
-                          defaultValue="Mike"
-                          placeholder="Company"
+                          placeholder="Juan Pablo"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
                     <Col className="pl-1" md="6">
                       <Form.Group>
-                        <label>Last Name</label>
+                        <label>Apellidos</label>
                         <Form.Control
-                          defaultValue="Andrew"
-                          placeholder="Last Name"
+                          placeholder="Parker Jameson"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
@@ -84,7 +81,7 @@ function User() {
                   <Row>
                     <Col md="12">
                       <Form.Group>
-                        <label>Address</label>
+                        <label>Dirección</label>
                         <Form.Control
                           defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                           placeholder="Home Address"

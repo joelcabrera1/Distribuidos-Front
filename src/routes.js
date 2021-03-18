@@ -1,38 +1,11 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard React - v2.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Dashboard from "views/Dashboard.js";
 import UserProfile from "views/UserProfile.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
 import Icons from "views/Icons.js";
-import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
-import Upgrade from "views/Upgrade.js";
 
 const dashboardRoutes = [
-  {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
-    layout: "/admin",
-  },
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -42,43 +15,64 @@ const dashboardRoutes = [
   },
   {
     path: "/user",
-    name: "User Profile",
+    name: "Perfil del Usuario",
     icon: "nc-icon nc-circle-09",
     component: UserProfile,
     layout: "/admin",
   },
   {
     path: "/table",
-    name: "Table List",
-    icon: "nc-icon nc-notes",
+    name: "Alumnos",
+    icon: "fas fa-user-friends",
     component: TableList,
     layout: "/admin",
   },
   {
     path: "/typography",
-    name: "Typography",
-    icon: "nc-icon nc-paper-2",
+    name: "Profesores",
+    icon: "fas fa-user-tie",
     component: Typography,
     layout: "/admin",
   },
   {
     path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-atom",
+    name: "Grados",
+    icon: "nc-icon nc-grid-45",
     component: Icons,
     layout: "/admin",
   },
   {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
+    path: "/icons",
+    name: "Asistencias",
+    icon: "fas concierge-bell",
+    component: Icons,
+    layout: "/admin",
+  },
+  {
+    path: "/icons",
+    name: "Tareas",
+    icon: "fas fa-tasks",
+    component: Icons,
+    layout: "/admin",
+  },
+  {
+    path: "/icons",
+    name: "Áreas",
+    icon: "fas fa-book",
+    component: Icons,
+    layout: "/admin",
+  },
+  {
+    path: "/icons",
+    name: "Semanas",
+    icon: "fas fa-calendar-week",
+    component: Icons,
     layout: "/admin",
   },
   {
     path: "/notifications",
-    name: "Notifications",
-    icon: "nc-icon nc-bell-55",
+    name: "Clases",
+    icon: "nc-icon nc-ruler-pencil",
     component: Notifications,
     layout: "/admin",
   },
