@@ -44,7 +44,7 @@ const dashboardRoutes = [
   {
     path: "/icons",
     name: "Asistencias",
-    icon: "fas concierge-bell",
+    icon: "fas fa-hands-helping",
     component: Icons,
     layout: "/admin",
   },

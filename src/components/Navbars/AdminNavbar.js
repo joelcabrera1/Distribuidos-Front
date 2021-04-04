@@ -1,5 +1,6 @@
 
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 
@@ -38,13 +39,13 @@ function Header() {
           >
             <i className="fas fa-ellipsis-v"></i>
           </Button>
-          <Navbar.Brand
+          <Link
             href="#home"
             onClick={(e) => e.preventDefault()}
             className="mr-2"
           >
             {getBrandText()}
-          </Navbar.Brand>
+          </Link>
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-2">
           <span className="navbar-toggler-bar burger-lines"></span>
@@ -55,15 +56,14 @@ function Header() {
           
           <Nav className="ml-auto" navbar>
             
-            <Nav.Item>
-              <Nav.Link
+            <div>
+              <Link
                 className="m-0"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                to = "/Login"
               >
-                <span className="no-icon">Cerrar Sesión</span>
-              </Nav.Link>
-            </Nav.Item>
+                Cerrar sesión
+              </Link>
+            </div>
 
           </Nav>
         </Navbar.Collapse>
